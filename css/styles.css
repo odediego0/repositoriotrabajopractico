@@ -70,3 +70,38 @@
 .logo img {
   max-height: 50px;
 }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px; /* espacio entre productos */
+  padding: 40px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.productos article {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.productos article:hover {
+  transform: scale(1.03);
+}
+
+.productos img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.productos h1 {
+  text-transform: uppercase;
+  font-size: 1.2;
+  margin-bottom: 10px;
+}
