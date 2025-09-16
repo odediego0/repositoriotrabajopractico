@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Log in</title>
 </head>
 <body>
-    <header>
-        <img src="NOVA logo.png" alt="Logo sitio web">
-        <form class="searchbar" action="search-results.html" method="get">
-            <button type="submit">Ingresar</button>
-            </form>
-         <nav>
-            <ul>
-               <li><a href="index.html">Inicio</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+    <header class="perfume-header">
+                <div class="search-container">
+            <input type="text" placeholder="Search here..." />
+            <button type="submit">
+            <img src="./img/search.png" alt="Search" />
+            </button>
+        </div>
+
+        <div class="logo">
+            <img src="./img/title.png" alt="">
+        </div>
+
+        <div class="icon-group">
+            <div class="icon-with-popup">
+            <img src="./img/user.png" alt="User" />
+            <div class="popup">
+                <p><strong><em>Welcome!</em></strong></p>
+                <button class="login-btn">LOG IN</button>
+                <button class="signup-btn">SIGN UP</button>
+            </div>
+            </div>
+            <img src="./img/location.png" alt="Location" />
+            <img src="./img/pound.png" alt="Currency" />
+            <img src="./img/bag.png" alt="Cart" />
+        </div>
     </header>
     <main>
         <div class="titulobienvenida">
-           <h1>Bienvenido a NOVA PERFUMES</h1>
+           <h1 class="titlogin">BIENVENIDOS!</h1>
         </div>
         <form action="./index.html" method="get">
-        <article class="caja1">
 
+        <article class="cajalogin">
      <div class="email">
        <label for="email">Email</label>
        <input type="text" id="email" name="email" value="">
      </div>
-     <div aria-colspan="contra">
+     <div class="contra">
         <label for="contrasena">Constraseña</label>
         <input type="password" id="contrasena" name="contrasena" value="">
      </div>
      <button class="ingreso">Ingresar</button>
-     <a href="./register.html">No tengo cuenta</a>
+     <a href="./register.html">Registrarse</a>
         </article>
         </form>
     </main>

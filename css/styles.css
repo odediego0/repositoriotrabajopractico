@@ -170,4 +170,16 @@
   cursor: pointer;
 }
 
-
+.titlogin{
+display: flex;
+justify-content: center;
+}
+.cajalogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.ingreso{
+background-color:lightcoral;
+}
