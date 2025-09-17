@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Registro</title>
 </head>
 <body>
-    <header>
-        <img src="NOVA logo.png" alt="Logo sitio web">
-        <form class="searchbar" action="search-results.html" method="get">
-            <button type="submit">Ingresar</button>
-            </form>
-         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+    <header class="perfume-header">
+        <div class="search-container">
+            <input type="text" placeholder="Search here..." />
+            <button type="submit">
+            <img src="./img/search.png" alt="Search" />
+            </button>
+        </div>
+
+        <div class="logo">
+            <img src="./img/title.png" alt="">
+        </div>
+
+        <div class="icon-group">
+            <div class="icon-with-popup">
+            <img src="./img/user.png" alt="User" />
+            <div class="popup">
+                <p><strong><em>Welcome!</em></strong></p>
+                <button class="login-btn">LOG IN</button>
+                <button class="signup-btn">SIGN UP</button>
+            </div>
+            </div>
+            <img src="./img/location.png" alt="Location" />
+            <img src="./img/pound.png" alt="Currency" />
+            <img src="./img/bag.png" alt="Cart" />
+        </div>
     </header>
+    <main>
+        <form action="./index.html" method="get">
+<article class="cajaregistro">
+    <div class="email">
+       <label for="email" class="label-mail">Email</label>
+       <input type="text" id="email" name="email" value="">
+    </div>
+
+    <div class="contra">
+        <label for="contrasena" class="label-contra">Constraseña</label>
+        <input type="password" id="contrasena" name="contrasena" value="">
+    </div>
+
+    <div class="contra">
+        <label for="contrasena" class="label-contra">Repetir constraseña</label>
+        <input type="password" id="contrasena" name="contrasena" value="">
+    </div>
+</article>
+</form>
+    </main>
     <footer>
           <ul>
             <li>Olivia de Diego</li>
