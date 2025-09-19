@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding: 0 30px;
   height: 80px;
-  background-color: black;
-  border-bottom: 4px solid #e4003a;
+  background-color: #3D2217;
+  border-bottom: 4px solid #3D2217;
   /* position: relative; */
 }
 
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #e4003a;
+  border: 3px solid #3D2217;
 }
 
 .logo img {
@@ -42,7 +42,7 @@
 }
 
 .search-container button {
-  background-color: #006c5c;
+  background-color: #D9BB9B;
   border: none;
   padding: 8px;
   cursor: pointer;
