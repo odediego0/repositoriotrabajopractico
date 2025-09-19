@@ -118,8 +118,6 @@
 
 .popup {
   position: absolute;
-  top: 120%;
-  left: 50%;
   transform: translateX(-50%);
   background: white;
   padding: 20px 24px;
@@ -144,12 +142,13 @@
   width: 24px;
 }
 .login-btn {
+  display: inline-block;
   width: 100%;
   background-color: black;
   color: white;
   border: none;
   border-radius: 40px;
-  padding: 12px 0;
+  padding: 12px 0px;
   margin: 10px 0;
   font-weight: bold;
   letter-spacing: 2px;
@@ -158,12 +157,13 @@
 }
 
 .signup-btn {
+  display: inline-block;
   width: 100%;
   background: white;
   color: black;
   border: 2px solid black;
   border-radius: 40px;
-  padding: 12px 0;
+  padding: 12px 0px;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 16px;
