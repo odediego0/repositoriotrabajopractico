@@ -1,0 +1,215 @@
+.perfume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 80px;
+  background-color: black;
+  border-bottom: 4px solid #e4003a;
+  /* position: relative; */
+}
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e4003a;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 36px;
+}
+
+.search-container input {
+  border: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  width: 300px;
+  outline: none;
+}
+
+.search-container button {
+  background-color: #006c5c;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-container button img {
+  width: 18px;
+  height: 18px;
+}
+
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 60px; 
+}
+
+.icon-group img {
+  width: 26px;
+  height: 26px;
+  filter: invert(1); 
+}
+
+
+.logo img {
+  max-height: 50px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px; /* espacio entre productos */
+  padding: 40px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.productos article {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.productos article:hover {
+  transform: scale(1.03);
+}
+
+.productos img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.productos h1 {
+  text-transform: uppercase;
+  font-size: 1.2;
+  margin-bottom: 10px;
+}
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+}
+
+.icon-with-popup {
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  width: 260px;
+  z-index: 100;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.icon-with-popup:hover .popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.icon {
+  cursor: pointer;
+  width: 24px;
+}
+.login-btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 0;
+  margin: 10px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  width: 100%;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 12px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.titlogin{
+display: flex;
+justify-content: center;
+}
+
+.cajalogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contra{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ingreso{
+background-color:lightcoral;
+border: 2px solid black;
+font-size: 20px;
+}
+
+.linkregistro{
+background-color:white;
+border: 2px solid black;
+font-size: 20px;
+color: black;  
+text-decoration: none;
+}
+.label-mail{
+  font-size: 20px;
+}
+.label-contra{
+  font-size: 20px;
+}

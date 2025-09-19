@@ -3,23 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Nova Perfumes</title>
 </head>
 <body>
-    <header>
-        <img src="NOVA logo.png" alt="Logo sitio web" width="100">
-        <form class="searchbar" action="./search-results.html" method="get">
-            <input type="text" name="" value="">
-            <button type="submit">buscar</button>
-        </form>
+    <header class="perfume-header">
+        <div class="search-container">
+            <input type="text" placeholder="Search here..." />
+            <button type="submit">
+            <img src="./img/search.png" alt="Search" />
+            </button>
+        </div>
 
-         <nav>
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="./img/title.png" alt="">
+        </div>
+
+        <div class="icon-group">
+            <div class="icon-with-popup">
+            <img src="./img/user.png" alt="User" />
+            <div class="popup">
+                <p><strong><em>Welcome!</em></strong></p>
+                <button class="login-btn">LOG IN</button>
+                <button class="signup-btn">SIGN UP</button>
+            </div>
+            </div>
+            <img src="./img/location.png" alt="Location" />
+            <img src="./img/pound.png" alt="Currency" />
+            <img src="./img/bag.png" alt="Cart" />
+        </div>
+
+
     </header>
+    <main>
+        <section class="productos">
+            <article>
+                <h1>Best Sellers</h1>
+                <img src="./img/bestsellers.jpg" alt="">
+            </article>
+            <article>
+                <h1>New In</h1>
+                <img src="./img/newin.jpg" alt="">
+            </article>
+            <article>
+                <h1>Sale</h1>
+                <img src="./img/sale.jpg" alt="">
+            </article>
+            <article>
+                <h1>Recommended</h1>
+                <img src="./img/recommended.jpg" alt="">
+            </article>
+            <article>
+                <h1>Men</h1>
+                <img src="./img/men.jpg" alt="">
+            </article>
+            <article>
+                <h1>Women</h1>
+                <img src="./img/women.jpeg" alt="">
+            </article>
+        </section>
+    </main>
     <footer>
         <ul>
             <li>Olivia de Diego</li>
