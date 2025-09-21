@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding: 0 30px;
   height: 80px;
-  background-color: #321510;
-  border-bottom: 4px solid #321510;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 4px solid hsl(0, 0%, 100%);
 }
 
 
@@ -14,7 +14,7 @@
   left: 45%;
   display: flex;
   align-items: center;
-  border: 3px solid #321510;
+  border: 3px solid hsl(0, 0%, 100%);
 }
 
 .logo img {
@@ -40,7 +40,7 @@
 }
 
 .search-container button {
-  background-color: #D9BB9B;
+  background-color: hsl(0, 0%, 0%);
   border: none;
   padding: 8px;
   cursor: pointer;
@@ -73,7 +73,7 @@
 }
 
 .topbar button {
-  background-color: #D9BB9B;
+  background-color: hsl(0, 0%, 0%);
   border-radius: 20px;
   padding: 8px 16px;
   font-weight: bold;
@@ -159,8 +159,8 @@
 .login-btn {
   display: inline-block;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 40px;
   padding: 12px 0px;
@@ -216,10 +216,10 @@ font-size: 20px;
 }
 
 .linkregistro{
-background-color:white;
+background-color:rgb(0, 0, 0);
 border: 2px solid black;
 font-size: 20px;
-color: black;  
+color: rgb(255, 255, 255);  
 text-decoration: none;
 }
 .label-mail{
