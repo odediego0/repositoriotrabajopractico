@@ -1,3 +1,4 @@
+
 .perfume-header {
   display: flex;
   align-items: center;
@@ -227,4 +228,19 @@ text-decoration: none;
 }
 .label-contra{
   font-size: 20px;
+}
+.contenedor_category{
+  display: grid;
+  grid-template-columns: repeat(4, 1);
+  gap: 30px;
+  padding: 40px;
+  max-width: 1400px;
+}
+/*Each product*/
+.producto{
+ text-align: center;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
 }
