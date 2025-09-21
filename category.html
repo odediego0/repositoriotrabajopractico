@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Categories</title>
      <style>
         body{
             font-family: 'Montserrat';
@@ -15,92 +15,90 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="img/byredo.jpg" alt="Logo sitio web">
-        <form class="searchbar" action="search-results.html" method="get">
-            <button type="submit">Ingresar</button>
-            </form>
-         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+    <header class="perfume-header">
+        <div class="search-container">
+            <input type="text" placeholder="Search here..." />
+            <button type="submit">
+            <img src="./img/search.png" alt="Search" />
+            </button>
+        </div>
+
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none;">
+            <img src="./img/byredo.jpg" alt="">
+        </div>
+
+        <div class="icon-group">
+            <div class="topbar">
+            <li><a href="./login.html" style="text-decoration: none;">
+                <button type="button" style="cursor: pointer;">LOG IN</button></a>
+            </li>
+            <li><a href="./register.html" style="text-decoration: none;"">
+                <button type="button" style="cursor: pointer;">REGISTER</button></a>
+            </li>
+        </div>
+        </div>
     </header>
-    <section class="contenedor_category">
+    <main>
         <h1 class="title">Perfumes</h1>
-        <article class="producto">
-            <img class="image_category"src="./img/fotos de perfumes /Young Rose.jpg" alt="Young Rose">
-            <h2>Young Rose</h2>
-            <p>Precio: 240 €</p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+        <section class="contenedor_category">
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /baldafrique.png" alt="">
+                <h2>Bal D'afrique</h2>
+                <p>Precio: 210€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-        <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Flowerhead.jpg">
-            <h2>Flowerhead</h2>
-            <p>Precio: 240 €</p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /bibliotheque.png" alt="">
+                <h2>Bibioltheque</h2>
+                <p>Precio: 240€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-        <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Olivers Peoples.jpg">
-            <h2>Olivers Peoples</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /blacksaffron.png" alt="">
+                <h2>Black Saffron</h2>
+                <p>Precio: 240€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-        <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Tobacco Mandarin.jpg">
-            <h2>Tobacco Mandarin</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /blanche.png" alt="">
+                <h2>Blanche</h2>
+                <p>Precio: 210€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-        <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Roughe Chaotique.jpg">
-            <h2>Rooughe Chaotique</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /gypsywater.png" alt="">
+                <h2>Gypsy Water</h2>
+                <p>Precio: 165€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-        <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Sellier.jpg">
-            <h2>Sellier</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /mojaveghost.png" alt="">
+                <h2>Mojave Ghost</h2>
+                <p>Precio: 210€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-        <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Vainille Antique.jpg">
-            <h2>Vanille Antique</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /roseofnomansland.png" alt="">
+                <h2>Rose of no man's Land</h2>
+                <p>Precio: 165€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
 
-         <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Eleventh hour.jpg">
-            <h2>Eleventh hour</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
-
-         <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Bibliotheque.jpg">
-            <h2>Bibliotheque</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
-
-         <article class="producto">
-            <img class="image_category" src="./img/fotos de perfumes /Black Saffron.jpg">
-            <h2>Black Saffron</h2>
-            <p>Precio: </p>
-            <a href="product.html">Ver detalle</a>
-        </article>
-
-    </section>
+            <article class="producto">
+                <img class="image_category" src="./img/fotos de perfumes /rougechaotique.png" alt="">
+                <h2>Rouge Chaotique</h2>
+                <p>Precio: 300€</p>
+                <a href="product.html">Ver detalles</a>
+            </article>
+        </section>
+    </main>
     <footer>
           <ul>
             <li>Olivia de Diego</li>
