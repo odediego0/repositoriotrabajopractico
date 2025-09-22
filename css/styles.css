@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 0 30px;
   height: 80px;
-  background-color: hsl(0, 50%, 67%);
+  background-color: lab(0% 0 0);
 }
 
 
