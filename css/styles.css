@@ -20,6 +20,35 @@
   max-width: 100%;
   height: auto;
 }
+.main_nav{
+  display: flex;
+}
+.navmain{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 170px;
+  background-color: black;
+}
+
+.navmain ul{
+  list-style: none;
+  padding: 10px;
+}
+
+.navmain li a{
+  text-decoration: none;
+  color: black;
+}
+
+.navmain li{
+  margin-bottom: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border: solid black 1px;
+  background-color: gray;
+  font-weight: bold;
+}
 
 .search-container {
   display: flex;
@@ -163,8 +192,8 @@ font-weight: bold;
 .cajalogin{
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
+  gap: 45px;
+  padding: 80px;
   background-color: #695858;
   border-radius: 20px;
   align-items: center;
