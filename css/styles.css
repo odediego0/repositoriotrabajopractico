@@ -153,6 +153,7 @@
   cursor: pointer;
 }
 
+
 .titlogin{
 display: flex;
 justify-content: center;
@@ -161,39 +162,60 @@ justify-content: center;
 .cajalogin{
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
+  background-color: #695858;
+  border-radius: 20px;
+  align-items: center;
 }
 
 .email{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-weight: bold;
 }
 
 .contra{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-weight: bold;
 }
 
 .ingreso{
-background-color:lightcoral;
+background-color:bisque;
 border: 2px solid black;
 font-size: 20px;
+font-weight: bold;
 }
 
 .linkregistro{
-background-color:rgb(0, 0, 0);
+background-color:rgba(0, 0, 0, 0.5);
 border: 2px solid black;
 font-size: 20px;
-color: rgb(255, 255, 255);  
+color: white;  
 text-decoration: none;
 }
 .label-mail{
   font-size: 20px;
 }
 .label-contra{
+  font-size: 20px;
+}
+
+.cajaregistro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cuenta{
+  color: brown;
+  text-decoration: none;
+  background-color:dimgrey;
+  border: 2px solid black;
   font-size: 20px;
 }
 .contenedor_category{
