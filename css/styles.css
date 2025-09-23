@@ -1,3 +1,6 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 
 .perfume-header {
   display: flex;
@@ -19,6 +22,35 @@
 .logo img {
   max-width: 100%;
   height: auto;
+}
+.main_nav{
+  display: flex;
+}
+.navmain{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 170px;
+  background-color: black;
+}
+
+.navmain ul{
+  list-style: none;
+  padding: 10px;
+}
+
+.navmain li a{
+  text-decoration: none;
+  color: black;
+}
+
+.navmain li{
+  margin-bottom: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border: solid black 1px;
+  background-color: gray;
+  font-weight: bold;
 }
 
 .search-container {
@@ -153,42 +185,54 @@
   cursor: pointer;
 }
 
+
 .titlogin{
 display: flex;
 justify-content: center;
+font-weight: bold;
 }
 
 .cajalogin{
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 80px;
+  background-color: #695858;
+  border-radius: 20px;
   align-items: center;
-  gap: 15px;
+  margin-left: 600px;
+  margin-right: 600px;
+  border-radius: 70px;
 }
 
 .email{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-weight: bold;
 }
 
 .contra{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-weight: bold;
 }
 
 .ingreso{
-background-color:lightcoral;
+background-color:bisque;
 border: 2px solid black;
 font-size: 20px;
+font-weight: bold;
+border-radius: 10px;
 }
 
 .linkregistro{
-background-color:rgb(0, 0, 0);
-border: 2px solid black;
-font-size: 20px;
-color: rgb(255, 255, 255);  
-text-decoration: none;
+  color: black;
+  text-decoration: none;
+  background-color:dimgrey;
+  border: 2px solid black;
+  font-size: 20px;
 }
 .label-mail{
   font-size: 20px;
@@ -196,6 +240,51 @@ text-decoration: none;
 .label-contra{
   font-size: 20px;
 }
+
+.tit_reg{
+display: flex;
+justify-content: center;
+font-weight: bold;
+}
+.cajaregistro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #695858;
+  margin-left: 600px;
+  margin-right: 600px;
+  border-radius: 70px;
+}
+
+.cuenta{
+  color: black;
+  text-decoration: none;
+  background-color:dimgrey;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+.email_reg{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.contra_reg{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.terminos{
+  gap: 5px;
+  font-weight: bold;
+}
+
 .contenedor_category{
   display: grid;
   grid-template-columns: repeat(4, 1);
@@ -236,8 +325,9 @@ text-decoration: none;
 .doscolumnas {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   padding: 40px;
+
 }
 
 .category {
