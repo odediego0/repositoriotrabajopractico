@@ -157,6 +157,7 @@
 .titlogin{
 display: flex;
 justify-content: center;
+font-weight: bold;
 }
 
 .cajalogin{
@@ -203,12 +204,21 @@ text-decoration: none;
   font-size: 20px;
 }
 
+.tit_reg{
+display: flex;
+justify-content: center;
+font-weight: bold;
+}
 .cajaregistro{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 20px;
+  background-color: #695858;
+  margin-left: 500px;
+  margin-right: 500px;
+  border-radius: 70px;
 }
 
 .cuenta{
@@ -218,6 +228,26 @@ text-decoration: none;
   border: 2px solid black;
   font-size: 20px;
 }
+
+.email_reg{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.contra_reg{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.terminos{
+  gap: 5px;
+  font-weight: bold;
+}
+
 .contenedor_category{
   display: grid;
   grid-template-columns: repeat(4, 1);
