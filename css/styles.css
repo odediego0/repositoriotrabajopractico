@@ -198,7 +198,7 @@ font-weight: bold;
   width: 300px;
   padding: 40px;
   gap: 20px;
-  background-color: #ffa6a686;
+  background-color: hwb(0 100% 0%);
   border-radius: 70px;
   align-items: center;
 }
@@ -224,7 +224,7 @@ font-weight: bold;
 }
 
 .ingreso{
-background-color:bisque;
+background-color:#ffffff;
 border: 2px solid black;
 font-size: 20px;
 font-weight: bold;
@@ -234,7 +234,7 @@ border-radius: 10px;
 .linkregistro{
   color: black;
   text-decoration: none;
-  background-color:dimgrey;
+  background-color:#ffffff;
   border: 2px solid black;
   font-size: 20px;
 }
@@ -257,14 +257,14 @@ font-weight: bold;
   gap: 20px;
   width: 350px;
   padding: 20px;
-  background-color: #ffa6a686;
+  background-color: #ffffff;
   border-radius: 70px;
 }
 
 .cuenta{
   color: black;
   text-decoration: none;
-  background-color:dimgrey;
+  background-color:#ffffff;
   font-size: 20px;
 }
 
