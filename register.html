@@ -37,31 +37,20 @@
     <h1 class="tit_reg">Bienvenido!</h1>
     <main class="loginmain">
         
-        <form action="./index.html" method="get">
-            <article class="cajaregistro">
-                <div class="email_reg">
-                <label for="email" class="label-mail">Email</label>
-                <input type="email" required id="email" name="email" value="" placeholder="Ingresá tu email">
-                </div>
+            <div class="register_container">
+                <h2>REGISTER</h2>
+                <form action="./index.html" method="get" class="register_form">
+                    <input type="email" placeholder="Email Address*" required>
+                    <input type="password" placeholder="Password*" required>
+                    <input type="password" placeholder="Confirm password*" required>
 
-                <div class="contra_reg">
-                    <label for="contrasena" class="label-contra">Constraseña</label>
-                    <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingresá tu contrasña">
-                </div>
+                    <label class="checkbox">
+                        <input type="checkbox"> Acepto los términos y condiciones
+                    </label>
 
-                <div class="contra_reg">
-                    <label for="contrasena2" class="label-contra">Repetir constraseña</label>
-                    <input type="password" id="contrasena2" name="contrasena2" value="" placeholder="Repeti tu contraseña">
-                </div>
-                <div class="terminos">
-                    <label for="">Acepto los terminos y condiciones</label>
-                    <input type="checkbox" name="terminos" value="">
-                </div>
-                <button type="submit">Registrarme</button>
-                <a href="./login.html">
-                    <button type="button">Ya tengo cuenta</button>
-                </a>
-            </article>
+                    <button type="submit" class="btn-submit">REGISTRARME</button>
+                </form>
+            </div>
 </form>
 </div>
     </main>
