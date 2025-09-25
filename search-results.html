@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Search</title>
 </head>
 <body>
-    <header>
-        <img src="NOVA logo.png" alt="Logo sitio web">
-        <form class="searchbar" action="search-results.html" method="get">
-            <button type="submit">Ingresar</button>
-            </form>
-         <nav>
-            <ul>
-               <li><a href="index.html">Inicio</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+    <header class="perfume-header">
+        <div class="search-container">
+            <input type="text" placeholder="Search here..." />
+            <button type="submit">
+                <a href="./search-results.html">
+                <img src="./img/search.png" alt="Search"/>
+                </a>
+            </button>
+        </div>
+
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none;">
+            <img src="./img/byredo.jpg" alt="">
+        </div>
+
+        <div class="icon-group">
+            <div class="topbar">
+            <li><a href="./login.html" style="text-decoration: none;">
+                <button type="button" style="cursor: pointer;">LOG IN</button></a>
+            </li>
+            <li><a href="./register.html" style="text-decoration: none;">
+                <button type="button" style="cursor: pointer;">REGISTER</button></a>
+            </li>
+        </div>
+        </div>
     </header>
+    <main>
+        
+    </main>
     <footer>
           <ul>
             <li>Olivia de Diego</li>

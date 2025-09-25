@@ -446,7 +446,16 @@ button {
   margin: 40px 20px;
 }
 
-.register_form input[type="email"],
+.register_form input[type="email"]
+{
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  background: #f5f5f5;
+  font-size: 15px;
+  box-sizing: border-box;
+}
 .register_form input[type="password"] {
   width: 100%;
   padding: 12px;
@@ -503,12 +512,11 @@ button {
   display: block;
   margin: 15px auto 0;
   text-align: center;
-  padding: 12px 20px;
+  padding: 12px;
   border: 1px solid #2f2f2f;
   text-decoration: none;
   color: #2f2f2f;
   font-size: 14px;
-  width: fit-content;
 }
 
 .producto a {
