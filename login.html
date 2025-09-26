@@ -11,29 +11,24 @@
 </head>
 <body>
     <header class="perfume-header">
+        <form action="./index.html" >
         <div class="search-container">
             <input type="text" placeholder="Search here..." />
-            <button type="submit">
-                <a href="./search-results.html">
-                <img src="./img/search.png" alt="Search"/>
-                </a>
-            </button>
+            <form action="./search-results.html" method="get"> <a href="./img/search.png"> </a></form>
         </div>
+        </form>
 
         <div class="logo">
-            <a href="./index.html" style="text-decoration: none;">
-            <img src="./img/byredo.jpg" alt="">
+            <a href="./index.html">
+            <img src="./img/byredo.jpg" alt=""> </a>
         </div>
+
 
         <div class="icon-group">
             <div class="topbar">
-            <li><a href="./login.html" style="text-decoration: none;">
-                <button type="button" style="cursor: pointer;">LOG IN</button></a>
-            </li>
-            <li><a href="./register.html" style="text-decoration: none;">
-                <button type="button" style="cursor: pointer;">REGISTER</button></a>
-            </li>
-        </div>
+                <form action="./login.html" method="get"> <button type="button">LOG IN</button></a></form>
+                <form action="./register.html" method="get"> <button type="button">REGISTER</button></form>
+            </div>
         </div>
     </header>
     <h1 class="titlogin">Bienvenido!</h1>
@@ -41,8 +36,8 @@
         <div class="login_container">
                 <h2>LOG IN</h2>
                 <form action="./index.html" method="get" class="login_form">
-                    <input type="email" placeholder="Email Address*" required>
-                    <input type="password" placeholder="Password*" required>
+                    <input class="email" type="email" placeholder="Email Address*" required>
+                    <input class="password" type="password" placeholder="Password*" required>
 
                     <button type="submit" class="btn_submit">INGRESAR</button>
                 </form>

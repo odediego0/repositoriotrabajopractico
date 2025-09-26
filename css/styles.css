@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -13,9 +19,8 @@ body{
 
 
 .logo {
-  position: absolute;
-  left: 45%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -86,7 +91,6 @@ body{
 .icon-group {
   display: flex;
   align-items: center;
-  gap: 60px; 
 }
 
 .icon-group img {
@@ -97,7 +101,6 @@ body{
 .topbar {
   display: flex;
   list-style: none;
-  gap: 50px;
   text-decoration: none;
   flex-wrap: wrap;
 }
@@ -119,7 +122,6 @@ body{
 .icon-group {
   display: flex;
   align-items: center;
-  gap: 70px;
   position: relative;
 }
 
@@ -163,44 +165,11 @@ justify-content: center;
 font-weight: bold;
 }
 
-.cajalogin{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  padding: 40px;
-  gap: 20px;
-  background-color: hwb(0 100% 0%);
-  border-radius: 70px;
-  align-items: center;
-}
-
 .loginmain{
   margin: 0;             
   display: flex;
   justify-content: center;     
   align-items: center;
-}
-
-.email{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-weight: bold;
-}
-
-.contra{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-weight: bold;
-}
-
-.ingreso{
-background-color:#ffffff;
-border: 2px solid black;
-font-size: 20px;
-font-weight: bold;
-border-radius: 10px;
 }
 
 .linkregistro{
@@ -210,9 +179,11 @@ border-radius: 10px;
   border: 2px solid black;
   font-size: 20px;
 }
+
 .label-mail{
   font-size: 20px;
 }
+
 .label-contra{
   font-size: 20px;
 }
@@ -222,41 +193,18 @@ display: flex;
 justify-content: center;
 font-weight: bold;
 }
-.cajaregistro{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 350px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 70px;
-}
 
 .cuenta{
   color: black;
   text-decoration: none;
-  background-color:#ffffff;
+  background-color:white;
   font-size: 20px;
-}
-
-.email_reg{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-weight: bold;
-}
-
-.contra_reg{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-weight: bold;
 }
 
 button {
   font-size: 200;
   cursor: pointer;
+  text-decoration: none;
   border: none;
   border-radius: 8px;
   padding: 10px 10px;
@@ -264,8 +212,7 @@ button {
 }
 
 .contenedor_category{
-  display: grid;
-  grid-template-columns: repeat(4, 1);
+  display: flex;
   gap: 30px;
   padding: 40px;
   max-width: 1400px;
@@ -287,9 +234,8 @@ button {
 }
 
 .producto {
-  flex: 1 1 calc(25% - 40px);
   box-sizing: border-box;
-  background: #fff;
+  background: white;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
@@ -306,17 +252,14 @@ button {
 .doscolumnas {
   display: flex;
   justify-content: center;
-  gap: 80px;
   padding: 40px;
-
+  flex-wrap: wrap;
 }
 
 .category {
-  background: #fff;
+  background: white;
   padding: 25px;
   border: #695858;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  flex: 1;
   max-width: 600px;
 }
 
@@ -334,13 +277,12 @@ button {
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .producto {
-  background: #f9f9f9;
+  background: white;
   padding: 15px;
   text-align: center;
 }
@@ -364,15 +306,13 @@ button {
 
 .navmain {
   width: 220px;
-  background: #232323;
+  background: black;
   padding: 20px;
   border-radius: 12px;
 }
 
 .navmain ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   background: none;
   border: none;   
 }
@@ -385,7 +325,7 @@ button {
 
 .navmain a {
   display: block;
-  padding: 9px 13px;
+  padding: 9px;
   border-radius: 8px;
   text-decoration: none;
   color: #333;
@@ -394,7 +334,6 @@ button {
 }
 
 .producto_seleccionado {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -405,9 +344,6 @@ button {
   text-align: center;
 }
 
-.contenedor_category {
-  flex: 1; 
-}
 .title {
   display: flex;
   justify-content: center;
@@ -418,8 +354,7 @@ button {
   margin: 40px 20px;
 }
 
-.register_form input[type="email"]
-{
+.emailr {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -428,7 +363,8 @@ button {
   font-size: 15px;
   box-sizing: border-box;
 }
-.register_form input[type="password"] {
+
+.passwordr {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -449,7 +385,7 @@ button {
 .register_form .btn-submit {
   width: 100%;
   padding: 15px;
-  background: #fff;
+  background: white;
   border: 1px solid #000;
   font-size: 14px;
   letter-spacing: 1px;
@@ -460,8 +396,7 @@ button {
   margin: 40px 20px;
 }
 
-.login_form input[type="email"],
-.login_form input[type="password"] {
+.email, .password {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -496,8 +431,8 @@ button {
   margin-top: 5px;
   padding: 5px 15px;
   background-color: #d8d8d8;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid black;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 13px;
