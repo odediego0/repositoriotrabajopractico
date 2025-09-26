@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Search</title>
-    <link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Byredo</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="perfume-header">
@@ -27,18 +27,21 @@
 
         <div class="icon-group">
             <div class="topbar">
-            <li><a href="./login.html" style="text-decoration: none;">
-                <button type="button" style="cursor: pointer;">LOG IN</button></a>
-            </li>
-            <li><a href="./register.html" style="text-decoration: none;">
-                <button type="button" style="cursor: pointer;">REGISTER</button></a>
-            </li>
+                <ul class="user-actions">
+                    <li><a href="./login.html" style="text-decoration: none;">
+                        <button type="button" style="cursor: pointer;">LOG IN</button></a>
+                    </li>
+                    <li><a href="./register.html" style="text-decoration: none;">
+                        <button type="button" style="cursor: pointer;">REGISTER</button></a>
+                    </li>
+                </ul>
         </div>
         </div>
+
     </header>
-    <main>
-           <div class="main_nav">
-        <nav class="navmain">
+    <main class="layout">
+        <div class="main_nav">
+        <aside class="navmain">
             <ul>
                 <li><a href="./category.html">Beauty</a></li>
                 <li><a href="./category.html">Fragrances</a></li>
@@ -65,11 +68,102 @@
                 <li><a href="./category.html">Womens shoes</a></li>
                 <li><a href="./category.html">Womens watches</a></li>
             </ul>
-        </nav>
-    </div>
+        </aside>
+        </div>
+        <div class="doscolumnas">
+       
+            <!-- Columna Derecha -->
+            <section class="category">
+                <h2 class="category-title">Random</h2>
+                
+                <section class="product-grid">
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/YuzuTree.png" alt="Producto">
+                        <h3>Yuzu Tree</h3>
+                        <p>A refreshing cleanser infused with the bright, citrusy scent of yuzu.</p>
+                        <p>Precio: 52 €</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/YuzuTree2.png" alt="Yuzu Tree">
+                        <h3>Yuzu Tree</h3>
+                        <p>A hydrating lotion with the crisp, uplifting aroma of yuzu.</p>
+                        <p>Precio: 60 €</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/GypsyWater.png" alt="Gypsy Water">
+                        <h3>Gypsy Water</h3>
+                        <p>A nourishing body lotion with the signature Gypsy Water fragrance.</p>
+                        <p>Precio: 65 €</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+                    
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/GypsyWater2.png" alt="Gypsy Water">
+                        <h3>Gypsy Water</h3>
+                        <p>A light mist with bergamot, juniper, and sandalwood for subtle, all-day scent.</p>
+                        <p>Precio: 58€</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/Bal'DAfriqueCrema.png" alt="Bal 'D Afrique">
+                        <h3>Bal 'D Afrique</h3>
+                        <p>A rich, nourishing cream infused with the vibrant citrus, floral, and woody notes of Bal D’Afrique.</p>
+                        <p>Precio: 67€</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/Bal'DAfriqueCremaManos.png" alt="Bal 'D Afrique">
+                        <h3>Bal 'D Afrique</h3>
+                        <p>A lightweight, moisturizing hand cream carrying the joyful and radiant scent of Bal D’Afrique.</p>
+                        <p>Precio: 30€</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/MojaveGhost.png" alt="Mojave Ghost">
+                        <h3>Mojave Ghost</h3>
+                        <p>A silky lotion that hydrates while leaving a soft trail of the woody-floral Mojave Ghost scent.</p>
+                        <p>Precio: 46€</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/MojaveGhostCrema.png" alt="Mojave Gost">
+                        <h3>Mojave Ghost</h3>
+                        <p>A gentle cleanser with the radiant, airy fragrance of Mojave Ghost.</p>
+                        <p>Precio: 67 €</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/Suede.png" alt="Suede">
+                        <h3>Suede</h3>
+                        <p>A cleansing hand wash with the refined, soft suede fragrance for a touch of everyday luxury.</p>
+                        <p>Precio: 52€</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+
+                    <article class="producto">
+                        <img class="image_category" src="./img/cremas/Suede 2.png" alt="Suede">
+                        <h3>Suede</h3>
+                        <p>A gentle cleanser infused with the soft, elegant scent of suede.</p>
+                        <p>Precio: 60€</p>
+                        <a href="product.html">Ver detalles</a>
+                    </article>
+                </section>
+            </sectin>
+        </div>
+         </div>
     </main>
+
     <footer>
-          <ul>
+        <ul>
             <li>Olivia de Diego</li>
             <li>Solana Canabal</li>
             <li>Inaki Braun</li>

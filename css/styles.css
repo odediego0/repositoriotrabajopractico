@@ -285,6 +285,7 @@ button {
   background: white;
   padding: 15px;
   text-align: center;
+  width: 50%;
 }
 
 .producto img {
@@ -437,4 +438,14 @@ button {
   font-weight: 500;
   font-size: 13px;
   border-radius: 5px;
+}
+
+
+.user-actions {
+  display: flex;
+}
+
+.image_cat{
+  display: flex;
+  width: 50%;
 }
