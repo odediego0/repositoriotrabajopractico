@@ -281,6 +281,7 @@ button {
 .product-grid {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .producto {
@@ -454,4 +455,10 @@ button {
 
 .unacolumna{
   width: 80%;
+  justify-content: space-around;
+}
+
+
+.producto.se{
+  width: 250px;
 }
