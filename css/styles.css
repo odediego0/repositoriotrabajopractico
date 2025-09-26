@@ -459,6 +459,11 @@ button {
 }
 
 
-.producto.se{
+.productose{
   width: 250px;
+}
+
+
+.productose img{
+  width: 100%;
 }
