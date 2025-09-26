@@ -21,16 +21,16 @@ body{
 
 .logo img {
   max-width: 100%;
-  height: auto;
 }
+
 .main_nav{
   display: flex;
 }
+
 .navmain{
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 170px;
   background-color: black;
 }
 
@@ -64,14 +64,14 @@ body{
 
 .search-container input {
   border: none;
-  padding: 8px 10px;
+  padding: 10px;
   font-size: 14px;
   width: 300px;
   outline: none;
 }
 
 .search-container button {
-  background-color: hsl(0, 0%, 0%);
+  background-color: black;
   border: none;
   padding: 8px;
   cursor: pointer;
@@ -82,7 +82,6 @@ body{
   height: 18px;
   filter: invert(1);
 }
-
 
 .icon-group {
   display: flex;
@@ -104,63 +103,36 @@ body{
 }
 
 .topbar button {
-  background-color: hsl(0, 0%, 0%);
+  background-color: black;
   color: white;
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 16px;
   font-weight: bold;
   cursor: pointer;
   border: none;
 }
 
-
 .logo img {
   max-height: 50px;
 }
 
-.productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 40px;
-  margin: 0 auto;
-}
-
-.productos article {
-  background-color: #f8f8f8;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.productos img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
-  max-height: 300px;
-}
-
-.productos h1 {
-  text-transform: uppercase;
-  font-size: 1.2;
-  margin-bottom: 10px;
-}
 .icon-group {
   display: flex;
   align-items: center;
   gap: 70px;
   position: relative;
 }
+
 .icon {
   cursor: pointer;
   width: 24px;
 }
+
 .login-btn {
   display: inline-block;
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 40px;
   padding: 12px 0px;
@@ -185,7 +157,6 @@ body{
   cursor: pointer;
 }
 
-
 .titlogin{
 display: flex;
 justify-content: center;
@@ -202,6 +173,7 @@ font-weight: bold;
   border-radius: 70px;
   align-items: center;
 }
+
 .loginmain{
   margin: 0;             
   display: flex;
