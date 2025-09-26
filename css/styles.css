@@ -303,6 +303,7 @@ button {
 .layout {
   display: flex;
   padding: 20px;
+  justify-content: space-around;
 }
 
 .navmain {
@@ -448,4 +449,8 @@ button {
 .image_cat{
   display: flex;
   width: 50%;
+}
+
+.unacolumna{
+  width: 80%;
 }

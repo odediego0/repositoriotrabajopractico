@@ -11,12 +11,14 @@
 </head>
 <body>
     <header class="perfume-header">
-        <form action="./index.html" >
         <div class="search-container">
             <input type="text" placeholder="Search here..." />
-            <form action="./search-results.html" method="get"> <a href="./img/search.png"> </a></form>
+            <button type="submit">
+                <a href="./search-results.html">
+                <img src="./img/search.png" alt="Search"/>
+                </a>
+            </button>
         </div>
-        </form>
 
         <div class="logo">
             <a href="./index.html">
@@ -24,11 +26,17 @@
         </div>
 
 
-        <div class="icon-group">
+         <div class="icon-group">
             <div class="topbar">
-                <form action="./login.html" method="get"> <button type="button">LOG IN</button></a></form>
-                <form action="./register.html" method="get"> <button type="button">REGISTER</button></form>
-            </div>
+                <ul class="user-actions">
+                    <li><a href="./login.html" style="text-decoration: none;">
+                        <button type="button" style="cursor: pointer;">LOG IN</button></a>
+                    </li>
+                    <li><a href="./register.html" style="text-decoration: none;">
+                        <button type="button" style="cursor: pointer;">REGISTER</button></a>
+                    </li>
+                </ul>
+        </div>
         </div>
     </header>
     <h1 class="titlogin">Bienvenido!</h1>
