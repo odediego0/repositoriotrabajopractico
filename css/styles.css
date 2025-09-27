@@ -178,7 +178,6 @@ button {
 .producto{
  text-align: center;
   max-width: 100%;
-  display: block;
 }
 
 .contenedor_category {
@@ -245,7 +244,7 @@ button {
 .producto img {
   width: 100%;  
   height: 180px;
-  object-fit: cover;
+  object-fit: cover;  /* profesores clase de consulta */
 }
 
 .footer-list {
@@ -260,7 +259,7 @@ button {
   justify-content: space-around;
 }
 
-.navmain {
+.navmain{
   width: 220px;
   background: black;
   padding: 20px;
@@ -371,21 +370,25 @@ button {
   letter-spacing: 1px;
 }
 
-.btn_link {
-  display: block;
-  margin: 15px auto;
+.btn_link{
+  margin: 15px;
   text-align: center;
   padding: 12px;
   border: 1px solid #2f2f2f;
   text-decoration: none;
   color: #2f2f2f;
   font-size: 16px;
+  border-radius: 8px;
+}
+
+.botones_login{
+  display: flex;
+  flex-direction: column;
 }
 
 .producto a{
-  display: inline-block;
   margin-top: 5px;
-  padding: 5px 15px;
+  padding: 2px;
   background-color: #d8d8d8;
   border: 1px solid black;
   color: black;
@@ -410,13 +413,11 @@ button {
 }
 
 .productose{
-  width: 250px;
+  width: 270px;
 }
 
 .productose a{
-  display: inline-block;
-  margin-top: 5px;
-  padding: 5px 15px;
+  padding: 2px;
   background-color: #d8d8d8;
   border: 1px solid black;
   color: black;
@@ -427,9 +428,7 @@ button {
 }
 
 .productocat a{
-  display: inline-block;
-  margin-top: 5px;
-  padding: 5px 15px;
+  padding: 2px ;
   background-color: #d8d8d8;
   border: 1px solid black;
   color: black;
@@ -444,10 +443,11 @@ button {
 }
 
 @media (max-width: 440px) {
-  nav.perfume-header {
-    width: 100%;
+  .perfume-header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
   }
-  
   aside.navmain{
     display: none;
   }
@@ -460,11 +460,6 @@ button {
   }
   main.loginmain{
     width: 110vw;
-  }
-  .perfume-header {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
   }
   .product-grid {
     flex-direction: column;
