@@ -427,17 +427,23 @@ button {
   width: 100%;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   nav.perfume-header {
     width: 100%;
   }
-
-  .layout{
-    width: 100vw;
+  
+  aside.navmain{
+    display: none;
+  }
+  div.main_nav{
+    display: none;
+  }
+  article.product0{
+  padding: 20px;
+  font-size: 300px;
   }
 
-  .category{
-    display: flex;
-    flex-wrap: wrap;
+  main.loginmain{
+    width: 110vw;
   }
 }
