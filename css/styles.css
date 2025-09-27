@@ -426,6 +426,19 @@ button {
   border-radius: 5px;
 }
 
+.productocat a{
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 15px;
+  background-color: #d8d8d8;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
 .productose img{
   width: 100%;
 }
@@ -459,5 +472,9 @@ button {
   }
   .producto {
     width: 100%;
+  }
+  .productocat{
+    font-size: 10px;
+    width: 50%;
   }
 }
