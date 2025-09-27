@@ -426,3 +426,18 @@ button {
 .productose img{
   width: 100%;
 }
+
+@media (max-width: 420px) {
+  nav.perfume-header {
+    width: 100%;
+  }
+
+  .layout{
+    width: 100vw;
+  }
+
+  .category{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -12,7 +12,7 @@
 <body>
     <header class="perfume-header">
         <div class="search-container">
-            <input type="text" placeholder="Search here..." />
+            <input type="text" name="buscador" value="" placeholder="Search here..." />
             <button type="submit">
                 <a href="./search-results.html">
                 <img src="./img/search.png" alt="Search"/>
@@ -45,19 +45,17 @@
                 <h2>REGISTER</h2>
                 <form action="./index.html" method="get" class="register_form">
 
-                    <input class="emailr" type="email" placeholder="Email Address*" required>
-                    <input class="passwordr" type="password" placeholder="Password*" required>
-                    <input class="passwordr" type="passwordr" placeholder="Confirm password*" required>
+                    <input class="emailr" type="email" value="" name="email" placeholder="Email Address*" required>
+                    <input class="passwordr" type="password" value="" name="contraseña" placeholder="Password*" required>
+                    <input class="passwordr" type="passwordr" value="" name="contraseña" placeholder="Confirm password*" required>
 
                     <label class="checkbox">
-                        <input type="checkbox"> Acepto los términos y condiciones
+                        <input type="checkbox" value="" name="checkbox"> Acepto los términos y condiciones
                     </label>
 
                     <button type="submit" class="btn-submit">REGISTRARME</button>
                 </form>
             </div>
-</form>
-</div>
     </main>
     <footer>
           <ul>
