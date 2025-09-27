@@ -132,6 +132,7 @@ body{
 display: flex;
 justify-content: center;
 font-weight: bold;
+padding: 20px;
 }
 
 .loginmain{            
@@ -144,6 +145,7 @@ font-weight: bold;
 display: flex;
 justify-content: center;
 font-weight: bold;
+padding: 20px;
 }
 
 .cuenta{
@@ -291,6 +293,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
 }
 
 .producto {
@@ -442,8 +445,19 @@ button {
   padding: 20px;
   font-size: 300px;
   }
-
   main.loginmain{
     width: 110vw;
+  }
+  .perfume-header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: 100%;
   }
 }
