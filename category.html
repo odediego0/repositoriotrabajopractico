@@ -11,14 +11,12 @@
 </head>
 <body>
     <header class="perfume-header">
-        <div class="search-container">
-            <input type="text" name="buscador" value="" placeholder="Search here..." />
+        <form class="search-container" action="./search-results.html" method="get">
+            <input type="text" name="q" placeholder="Search here..." required />
             <button type="submit">
-                <a href="./search-results.html">
-                <img src="./img/search.png" alt="Search"/>
-                </a>
+            <img src="./img/search.png" alt="Search" />
             </button>
-        </div>
+        </form>
 
         <div class="logo">
             <a href="./index.html" style="text-decoration: none;">
@@ -165,5 +163,6 @@
             <li>Inaki Braun</li>
         </ul>
     </footer>
+    <script src="./js/category.js"></script>
 </body>
 </html>
