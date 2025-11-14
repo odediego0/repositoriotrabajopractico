@@ -1,4 +1,5 @@
 let lista = document.querySelector('.listaCategoria')
+
 fetch(`https://dummyjson.com/products/categories`)
     .then(function (response) {
         return response.json();
