@@ -11,3 +11,19 @@ fetch(`https://dummyjson.com/products/categories`)
     .catch(function (error) {
         console.log('Error: ' + error);
     });
+
+//     let producto = document.querySelector('.producto')
+// fetch('https://dummyjson.com/products/1')
+//     .then(function (response) {
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         console.log(producto);
+//         for (let i = 0; i < data.length; i++) {
+//             producto.innerHTML += `<li><a href="./category.html">${data[i].name}</a></li>`
+//         }
+//     })
+//     .catch(function (error) {
+//         console.log('Error: ' + error);
+//     });
+   
