@@ -18,8 +18,7 @@ const busqueda = document.querySelector(".buscar");
 form.addEventListener('submit', function (event){
     event.preventDefault();
     if (busqueda.value == '' ) {
-        alert('Por favor este campo no debe estar vacio');
-       
+        alert('Este campo no debe estar vacio');
     } else if (busqueda.value.length < 3 ) {
         alert('Por favor ingrese al menos 3 caracteres');
     } else {
