@@ -26,18 +26,26 @@ form.addEventListener('submit', function (event){
     }
 })
 
-//     let producto = document.querySelector('.producto')
-// fetch('https://dummyjson.com/products/1')
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(producto);
-//         for (let i = 0; i < data.length; i++) {
-//             producto.innerHTML += `<li><a href="./category.html">${data[i].name}</a></li>`
-//         }
-//     })
-//     .catch(function (error) {
-//         console.log('Error: ' + error);
-//     });
+let detalle = document.querySelector('.producto')
+fetch(`https://dummyjson.com/products/1`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+        detalle.innerHTML += `<h2>${data.title}</h2>
+        <p>${data.brand}</p>
+        <p>${data.description}</p>
+        <p>${data.price}$</p>
+        <img src="${data.images[0]}"/>
+        <a href="./category.html">${data.category}</a>
+        <p>Stock: ${data.stock} </p>
+        <ul>Tags:
+            <li>${data.tags[0]}</li>
+            <li>${data.tags[1]}</li>
+        <ul>`
+    })
+    .catch(function (error) {
+        console.log('Error: ' + error);
+    });
    
