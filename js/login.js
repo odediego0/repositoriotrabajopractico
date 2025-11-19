@@ -11,3 +11,30 @@ form.addEventListener('submit', function (event){
         this.submit();
     }
 })
+
+
+
+const email = document.querySelector(".login_form");
+const input_email = document.querySelector(".email");
+
+form.addEventListener('submit', function (e){
+    e.preventDefault();
+    if (input_email.value == '' ) {
+        alert('Este campo no debe estar vacio');
+    } else {
+        this.submit();
+    }
+})
+
+const input_contra = document.querySelector(".password");
+
+form.addEventListener('submit', function (p){
+    p.preventDefault();
+    if (input_contra.value == '' ) {
+        alert('Este campo no debe estar vacio');
+    } else if (busqueda.value.length < 6 ) {
+        alert('La contraseña debe tener al menos 6 caracteres');
+    } else {
+        this.submit();
+    }
+})
