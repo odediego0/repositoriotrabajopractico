@@ -26,8 +26,15 @@ form.addEventListener('submit', function (event){
     }
 })
 
+let querystring = location.search;
+let querystringobj = new URLSearchParams(querystring);
+let id = querystringobj.get('id');
+console.log(id);
+
+
+
 let detalle = document.querySelector('.producto')
-fetch(`https://dummyjson.com/products/1`)
+fetch(`https://dummyjson.com/products/${id}`)
     .then(function (response) {
         return response.json();
     })
