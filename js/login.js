@@ -26,7 +26,7 @@ form.addEventListener('submit', function (e){
     }
 })
 
-const input_contra = document.querySelector(".password");
+let input_contra = document.querySelector(".password");
 
 form.addEventListener('submit', function (p){
     p.preventDefault();
@@ -38,3 +38,5 @@ form.addEventListener('submit', function (p){
         this.submit();
     }
 })
+
+localStorage.setItem("password", input_contra);
