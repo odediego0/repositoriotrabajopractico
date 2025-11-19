@@ -26,15 +26,45 @@ form.addEventListener('submit', function (event){
     }
 })
 
-fetch(`https://dummyjson.com/products/category/smartphones`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+let productoindex = document.querySelectorAll (".producto");
+fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         for (let i = 0; i < data.length; i++) {
-            
+            product.innerHTML +=
+            `<img src="${product.thumbnail}" alt="${product.title}">
+        <h3>${product.title}</h3>
+        <p>${product.description}</p>
+        <p>Precio: $${product.price}</p>
+        `
         }
+        console.log(data);
     })
     .catch(function (error) {
         console.log('Error: ' + error);
     });
+
+    let productoindex2 = document.querySelectorAll (".producto");
+fetch(`https://dummyjson.com/products/category/fragrances`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        for (let i = 0; i < data.length; i++) {
+            product.innerHTML +=
+            `<img src="${product.thumbnail}" alt="${product.title}">
+        <h3>${product.title}</h3>
+        <p>${product.description}</p>
+        <p>Precio: $${product.price}</p>
+        `
+        }
+        console.log(data);
+    })
+    .catch(function (error) {
+        console.log('Error: ' + error);
+    });
+    
+
+   
