@@ -26,17 +26,17 @@ form.addEventListener('submit', function (e){
     }
 })
 
-let input_contra = document.querySelector(".password");
+const input_contra = document.querySelector(".password");
 
 form.addEventListener('submit', function (p){
     p.preventDefault();
     if (input_contra.value == '' ) {
         alert('Este campo no debe estar vacio');
-    } else if (busqueda.value.length < 6 ) {
+    } else if (input_contra.value.length < 6 ) {
         alert('La contraseña debe tener al menos 6 caracteres');
     } else {
         this.submit();
     }
 })
 
-localStorage.setItem("password", input_contra);
+localStorage.setItem("email", input_email.value);
