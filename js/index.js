@@ -25,3 +25,16 @@ form.addEventListener('submit', function (event){
         this.submit();
     }
 })
+
+fetch(`https://dummyjson.com/products/category/smartphones`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        for (let i = 0; i < data.length; i++) {
+            
+        }
+    })
+    .catch(function (error) {
+        console.log('Error: ' + error);
+    });
