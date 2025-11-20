@@ -26,7 +26,7 @@ form.addEventListener('submit', function (event){
     }
 })
 
-let productsBeauty = document.querySelectorAll (".beauty");
+let productsBeauty = document.querySelector(".beauty");
 fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
 
     .then(function (response) {
@@ -34,22 +34,19 @@ fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar 
     })
 
     .then(function (data) {
-        for (let i = 0; i < data.length; i++) {
+        for (let i = 0; i < data.products.length; i++) {
             let producto = data.products[i]
-
             productsBeauty.innerHTML +=
             `
         <article class="producto">
-        <img src="${producto.thumbnail}" alt="${product.title}">
+        <img src="${producto.thumbnail}" alt="${producto.title}">
         <h3>${producto.title}</h3>
         <p>${producto.description}</p>
         <p>Precio: $${producto.price}</p>
-        <<a href="product.html?id=${producto.id}">Ver detalles</a>
+        <a href= "./product.html?id=${producto.id}">Ver detalles</a>
         </article>
         `
         }
-        productsBeauty.innerHTML = products;
-        console.log(data);
     })
 
     .catch(function (error) {

@@ -33,7 +33,7 @@ console.log(id);
 
 
 
-let detalle = document.querySelector('.producto');
+let detalle = document.querySelector('.detalle');
 fetch(`https://dummyjson.com/products/${id}`)
     .then(function (response) {
         return response.json();
