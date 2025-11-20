@@ -27,12 +27,11 @@ form.addEventListener('submit', function (event){
 })
 
 let productsBeauty = document.querySelector(".beauty");
-fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+fetch(`https://dummyjson.com/products/category/beauty`)
 
     .then(function (response) {
         return response.json();
     })
-
     .then(function (data) {
         for (let i = 0; i < data.products.length; i++) {
             let producto = data.products[i]
@@ -48,32 +47,32 @@ fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar 
         `
         }
     })
-
     .catch(function (error) {
         console.log('Error: ' + error);
     });
 
-  let productsFragrances = document.querySelectorAll (".fragrances");
-fetch(`https://dummyjson.com/products/category/fragrances`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+  let productsFragrances = document.querySelector(".fragrances");
+fetch(`https://dummyjson.com/products/category/fragrances`)
 
     .then(function (response) {
         return response.json();
     })
 
     .then(function (data) {
-        for (let i = 0; i < data.length; i++) {
-            productsBeauty.innerHTML +=
+        console.log(data);
+        for (let i = 0; i < data.products.length; i++) {
+            let producto = data.products[i]
+            productsFragrances.innerHTML +=
             `
         <article class="producto">
-        <img src="${product.thumbnail}" alt="${product.title}">
-        <h3>${product.title}</h3>
-        <p>${product.description}</p>
-        <p>Precio: $${product.price}</p>
-        <<a href="product.html?id=${producto.id}">Ver detalles</a>
+        <img src="${producto.thumbnail}" alt="${producto.title}">
+        <h3>${producto.title}</h3>
+        <p>${producto.description}</p>
+        <p>Precio: $${producto.price}</p>
+        <a href="./product.html?id=${producto.id}">Ver detalles</a>
         </article>
         `
         }
-        console.log(data);
     })
 
     .catch(function (error) {
