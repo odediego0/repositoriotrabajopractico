@@ -35,17 +35,20 @@ fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar 
 
     .then(function (data) {
         for (let i = 0; i < data.length; i++) {
+            let producto = data.products[i]
+
             productsBeauty.innerHTML +=
             `
         <article class="producto">
-        <img src="${product.thumbnail}" alt="${product.title}">
-        <h3>${product.title}</h3>
-        <p>${product.description}</p>
-        <p>Precio: $${product.price}</p>
+        <img src="${producto.thumbnail}" alt="${product.title}">
+        <h3>${producto.title}</h3>
+        <p>${producto.description}</p>
+        <p>Precio: $${producto.price}</p>
         <<a href="product.html?id=${producto.id}">Ver detalles</a>
         </article>
         `
         }
+        productsBeauty.innerHTML = products;
         console.log(data);
     })
 

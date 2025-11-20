@@ -57,7 +57,7 @@ fetch(`https://dummyjson.com/products/${id}`)
         console.log('Error: ' + error);
     });
    
-    let reviews = document.querySelector()
+    let reviews = document.querySelector() // REVIEWS
     reviews.innerHTML = "";
 
     let allReviews;
