@@ -33,14 +33,15 @@ console.log(id);
 
 
 
-let detalle = document.querySelector('.producto')
+let detalle = document.querySelector('.producto');
 fetch(`https://dummyjson.com/products/${id}`)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         console.log(data);
-        detalle.innerHTML += `<h2>${data.title}</h2>
+        detalle.innerHTML += `
+        <h2>${data.title}</h2>
         <p>${data.brand}</p>
         <p>${data.description}</p>
         <p>${data.price}$</p>
@@ -56,3 +57,22 @@ fetch(`https://dummyjson.com/products/${id}`)
         console.log('Error: ' + error);
     });
    
+    let reviews = document.querySelector()
+    reviews.innerHTML = "";
+
+    let allReviews;
+    
+    if (data.reviews){
+        allReviews = data.reviews
+    }
+    else {
+        allReviews = [];
+    }
+
+    if (allReviews.length>0){
+        for(let i = 0; i < allReviews.length; i++)
+    }
+
+
+  
+    

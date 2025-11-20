@@ -26,45 +26,59 @@ form.addEventListener('submit', function (event){
     }
 })
 
-let productoindex = document.querySelectorAll (".producto");
+let productsBeauty = document.querySelectorAll (".beauty");
 fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+
     .then(function (response) {
         return response.json();
     })
+
     .then(function (data) {
         for (let i = 0; i < data.length; i++) {
-            product.innerHTML +=
-            `<img src="${product.thumbnail}" alt="${product.title}">
+            productsBeauty.innerHTML +=
+            `
+        <article class="producto">
+        <img src="${product.thumbnail}" alt="${product.title}">
         <h3>${product.title}</h3>
         <p>${product.description}</p>
         <p>Precio: $${product.price}</p>
+        <<a href="product.html?id=${producto.id}">Ver detalles</a>
+        </article>
         `
         }
         console.log(data);
     })
+
     .catch(function (error) {
         console.log('Error: ' + error);
     });
 
-    let productoindex2 = document.querySelectorAll (".producto");
-fetch(`https://dummyjson.com/products/category/fragrances`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+  let productsFragrances = document.querySelectorAll (".fragrances");
+fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+
     .then(function (response) {
         return response.json();
     })
+
     .then(function (data) {
         for (let i = 0; i < data.length; i++) {
-            product.innerHTML +=
-            `<img src="${product.thumbnail}" alt="${product.title}">
+            productsBeauty.innerHTML +=
+            `
+        <article class="producto">
+        <img src="${product.thumbnail}" alt="${product.title}">
         <h3>${product.title}</h3>
         <p>${product.description}</p>
         <p>Precio: $${product.price}</p>
+        <<a href="product.html?id=${producto.id}">Ver detalles</a>
+        </article>
         `
         }
         console.log(data);
     })
+
     .catch(function (error) {
         console.log('Error: ' + error);
     });
-    
+
 
    
