@@ -34,4 +34,26 @@ console.log(buscador);
 
 const resultado = document.querySelector('.category-title');
 resultado.innerHTML = 'Resultados de búsqueda para ' + buscador;
+const searchResults = document.querySelector('.product-grid');
 
+fetch(`https://dummyjson.com/products/search?q=${buscador}`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        searchResults.innerHTML = "";
+        for (let i = 0; i < data.products.length; i++) {
+            let prod = data.products[i];
+            searchResults.innerHTML += `
+          <article class="resultado-producto">
+            <img src="${prod.thumbnail}" alt="${prod.title}">
+            <h3>${prod.title}</h3>
+            <p>${prod.description}</p>
+            <p><strong>Precio: $${prod.price}</strong></p>
+            <a href="./product.html?id=${prod.id}" class="btn-detalle">Ver detalle</a>
+          </article>`
+        }
+    })
+    .catch(function (error) {
+        console.log('Error: ' + error);
+    });
