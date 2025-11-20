@@ -42,16 +42,26 @@ fetch(`https://dummyjson.com/products/search?q=${buscador}`)
     })
     .then(function (data) {
         searchResults.innerHTML = "";
+        
+        if (!data.products || data.products.length === 0) {
+            searchResults.innerHTML = `
+                <p>No hay resultados para el término: <strong>${buscador}</strong></p>
+            `;
+            return;
+        }
+
         for (let i = 0; i < data.products.length; i++) {
-            let prod = data.products[i];
+            const prod = data.products[i];
+
             searchResults.innerHTML += `
-          <article class="resultado-producto">
-            <img src="${prod.thumbnail}" alt="${prod.title}">
-            <h3>${prod.title}</h3>
-            <p>${prod.description}</p>
-            <p><strong>Precio: $${prod.price}</strong></p>
-            <a href="./product.html?id=${prod.id}" class="btn-detalle">Ver detalle</a>
-          </article>`
+                <article class="resultado-producto">
+                    <img src="${prod.thumbnail}" alt="${prod.title}">
+                    <h3>${prod.title}</h3>
+                    <p>${prod.description}</p>
+                    <p><strong>Precio: $${prod.price}</strong></p>
+                    <a class="btn-detalle" href="./product.html?id=${prod.id}">Ver detalle</a>
+                </article>
+            `;
         }
     })
     .catch(function (error) {
