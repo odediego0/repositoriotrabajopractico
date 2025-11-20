@@ -54,7 +54,7 @@ fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar 
     });
 
   let productsFragrances = document.querySelectorAll (".fragrances");
-fetch(`https://dummyjson.com/products/category/beauty`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
+fetch(`https://dummyjson.com/products/category/fragrances`) //Link de api para usar en la pagina principal, despues hay que cambiar donde dice smartphone por un id
 
     .then(function (response) {
         return response.json();

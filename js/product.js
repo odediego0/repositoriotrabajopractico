@@ -70,9 +70,25 @@ fetch(`https://dummyjson.com/products/${id}`)
     }
 
     if (allReviews.length>0){
-        for(let i = 0; i < allReviews.length; i++)
-    }
+        for(let i = 0; i < allReviews.length; i++){
+            let review = allReviews[i];
 
+            let estrellas = ""
+            for(let estrella = 0; estrella < review.rating; estrella++)
+                estrellas = estrellas + "★"
 
-  
-    
+            let date = review.date
+            let fecha = ""
+            for(let AAAAMMDD = 0; AAAAMMDD < 10 ; AAAAMMDD++)//AAAAMMDD = ANIO, MES, DIA
+            fecha = fecha + date [AAAAMMDD]
+
+            
+
+            reviews.innerHTML +=
+            `
+        <h2>${data.commentario}</h2>
+        <p>${fecha}</p>
+        <p>${estrellas}</p>`
+        
+        }
+    } 
