@@ -29,11 +29,11 @@ form.addEventListener('submit', function (event){
 let querystring = location.search;
 let querystringobj = new URLSearchParams(querystring);
 let id = querystringobj.get('id');
-console.log(id);
 
 
 
 let detalle = document.querySelector('.detalle');
+
 fetch(`https://dummyjson.com/products/${id}`)
     .then(function (response) {
         return response.json();
@@ -44,7 +44,7 @@ fetch(`https://dummyjson.com/products/${id}`)
         <h2>${data.title}</h2>
         <p>${data.brand}</p>
         <p>${data.description}</p>
-        <p>${data.price}$</p>
+        <p>Priced at ${data.price}$</p>
         <img src="${data.images[0]}"/>
         <a href="./category.html">${data.category}</a>
         <p>Stock: ${data.stock} </p>
@@ -52,43 +52,63 @@ fetch(`https://dummyjson.com/products/${id}`)
             <li>${data.tags[0]}</li>
             <li>${data.tags[1]}</li>
         <ul>`
+
     })
     .catch(function (error) {
         console.log('Error: ' + error);
     });
    
-    let reviews = document.querySelector() // REVIEWS
-    reviews.innerHTML = "";
+    let reviews = document.querySelector(".reviews") // REVIEWS
+    fetch(`https://dummyjson.com/products/${id}`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data){
+        for (let i = 0; i < data.reviews.length; i++) {
+            let review = data.reviews[i];
+            reviews.innerHTML += `
+            <article class="review">
+            <p><strong>Rating:</strong> ${review.rating}</p>
+            <p>${review.comment}</p>
+            <p><strong>Fecha:</strong> ${review.date}</p>
+            <p><strong>Usuario:</strong> ${review.reviewerName}</p>
+        </article>
+      `}
+    })
+    .catch(function (error) {
+        console.log('Error: ' + error);
+    });
 
-    let allReviews;
     
-    if (data.reviews){
-        allReviews = data.reviews
-    }
-    else {
-        allReviews = [];
-    }
+    // let allReviews;
+    
+    // if (data.reviews){
+    //     allReviews = data.reviews
+    // }
+    // else {
+    //     allReviews = [];
+    // }
 
-    if (allReviews.length>0){
-        for(let i = 0; i < allReviews.length; i++){
-            let review = allReviews[i];
+    // if (allReviews.length>0){
+    //     for(let i = 0; i < allReviews.length; i++){
+    //         let review = allReviews[i];
 
-            let estrellas = ""
-            for(let estrella = 0; estrella < review.rating; estrella++)
-                estrellas = estrellas + "★"
+    //         let estrellas = ""
+    //         for(let estrella = 0; estrella < review.rating; estrella++)
+    //             estrellas = estrellas + "★"
 
-            let date = review.date
-            let fecha = ""
-            for(let AAAAMMDD = 0; AAAAMMDD < 10 ; AAAAMMDD++)//AAAAMMDD = ANIO, MES, DIA
-            fecha = fecha + date [AAAAMMDD]
+    //         let date = review.date
+    //         let fecha = ""
+    //         for(let AAAAMMDD = 0; AAAAMMDD < 10 ; AAAAMMDD++)//AAAAMMDD = ANIO, MES, DIA
+    //         fecha = fecha + date [AAAAMMDD]
 
             
 
-            reviews.innerHTML +=
-            `
-        <h2>${data.commentario}</h2>
-        <p>${fecha}</p>
-        <p>${estrellas}</p>`
+    //         reviews.innerHTML +=
+    //         `
+    //     <h2>${data.commentario}</h2>
+    //     <p>${fecha}</p>
+    //     <p>${estrellas}</p>`
         
-        }
-    } 
+    //     }
+    // } 
