@@ -442,6 +442,10 @@ button {
   width: 100%;
 }
 
+.producto_seleccionado {
+  padding: 30px;
+}
+
 @media (max-width: 440px) {
   .perfume-header {
     flex-direction: column;
