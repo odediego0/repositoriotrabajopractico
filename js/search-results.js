@@ -33,7 +33,7 @@ const buscador = querystringobj.get('q');
 console.log(buscador);
 
 const resultado = document.querySelector('.category-title');
-resultado.innerHTML = 'Resultados de búsqueda para ' + buscador;
+resultado.innerHTML = 'Resultados de búsqueda para: ' + buscador;
 const searchResults = document.querySelector('.product-grid');
 
 fetch(`https://dummyjson.com/products/search?q=${buscador}`)
@@ -41,8 +41,9 @@ fetch(`https://dummyjson.com/products/search?q=${buscador}`)
         return response.json();
     })
     .then(function (data) {
+        console.log(searchResults);
         searchResults.innerHTML = "";
-        
+
         if (!data.products || data.products.length === 0) {
             searchResults.innerHTML = `
                 <p>No hay resultados para el término: <strong>${buscador}</strong></p>
