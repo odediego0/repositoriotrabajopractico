@@ -12,16 +12,21 @@ form.addEventListener('submit', function (event){
     }
 })
 
+let form_register = document.querySelector(".register_form");
 let input_emailr = document.querySelector(".emailr");
 let input_passwordr = document.querySelector(".passwordr");
 let input_passwordr2 = document.querySelector(".passwordrr");
-let chek_terminos = document.querySelector("#chekbox");
 
-form.addEventListener('submit', function (t){
+
+form_register.addEventListener('submit', function (t){
     t.preventDefault();
-    if (input_passwordr.value() == '') {
+    if (input_passwordr.value == '') {
         alert('El campo contraseña no debe estar vacío');
     } else if (input_passwordr.value.length < 6) {
         alert('La contraseña debe tener al menos 6 caracteres');
-    }   
+    } else if (input_passwordr != input_passwordr2){
+        alert("Las contraseñas no coinciden");
+    } else {
+        this.submit();
+    }
     })
