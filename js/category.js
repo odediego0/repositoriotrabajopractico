@@ -28,30 +28,28 @@ form.addEventListener('submit', function (event){
 
 let querystring = location.search;
 let querystringobj = new URLSearchParams(querystring);
-let id = querystringobj.get('id');
-
-
-
+let category = querystringobj.get('cat');
 let detalle = document.querySelector('.detalle');
+let productsContainer = document.querySelector('.contenedor_category')
 
-fetch(`'https://dummyjson.com/products/category/${id}`)
+fetch(`https://dummyjson.com/products/category/${id}`)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         console.log(data);
-        detalle.innerHTML += `
-        <h2>${data.title}</h2>
-        <p>${data.brand}</p>
-        <p>${data.description}</p>
-        <p>Priced at ${data.price}$</p>
-        <img src="${data.images[0]}"/>
-        <a href="./category.html">${data.category}</a>
-        <p>Stock: ${data.stock} </p>
-        <ul>Tags:
-            <li>${data.tags[0]}</li>
-            <li>${data.tags[1]}</li>
-        <ul>`
+        for (let i = 0; i < data.products.length; i++) {
+            let producto = data.products[i]
+            productsContainer.innerHTML +=
+            
+        ` <article class="producto">
+        <img src="${producto.thumbnail}" alt="${producto.title}">
+        <h3>${producto.title}</h3>
+        <p>${producto.description}</p>
+        <p>Precio: $${producto.price}</p>
+        <a href= "./product.html?id=${producto.id}">Ver detalles</a>
+        </article>`
+        }
 
     })
     .catch(function (error) {
