@@ -27,12 +27,10 @@ email.addEventListener('submit', function (e){
     } else if (input_contra.value.length < 6 ) {
         alert('La contraseña debe tener al menos 6 caracteres');
     } else { 
+        localStorage.setItem('usuarioEmail', input_email.value);
         this.submit();
     }
 })
 
 
 
-
-
-localStorage.setItem("email_login   ", input_email.value);
