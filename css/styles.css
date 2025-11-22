@@ -370,6 +370,12 @@ button {
   box-sizing: border-box;
 }
 
+
+.producto {
+    width: 300px;      
+    text-align: center;
+}
+
 .login_form .btn_submit {
   width: 100%;
   padding: 15px;
